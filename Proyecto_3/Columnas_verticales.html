@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Columnas verticales</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+	<style>
+		
+        
+
+        body
+        {
+        	background: linear-gradient(to left, #6A91F1 ,#A4C4F8);
+        	height: 120%;
+        	width: 100ps;
+        }
+		.row
+		{
+			background: #e8e8e8;
+			margin-top: 28px;
+			height: 120px;
+			border-radius: 50px;
+			border-style: inset;
+			border-color: black;
+		}
+		.col
+		{
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4d5061;
+			border-radius: 100px;
+			transition: background.15s;
+			cursor: pointer;
+		}
+		.col:hover
+		{
+			background-color: red;
+			color: white;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+	 <div class="container">
+	 <button class='btn btn-primary'>boton de pruebas</button>
+	
+	<div class="row align-items-start">
+	<div class="col">columna #1</div>
+	<div class="col">columna #2</div>
+	<div class="col">columna #3</div>
+		</div>
+
+		<div class="row align-items-center">
+	<div class="col">columna #1</div>
+	<div class="col">columna #2</div>
+	<div class="col">columna #3</div>
+		</div>
+
+		<div class="row align-items-end">
+	<div class="col">columna #1</div>
+	<div class="col">columna #2</div>
+	<div class="col">columna #3</div>
+		</div>
+
+
+		<div class="row">
+	<div class="col align-self-start">columna #1</div>
+	<div class="col align-self-center">columna #2</div>
+	<div class="col align-self-end">columna #3</div>
+		</div>
+
+		<div class="row">
+	<div class="col">columna #1</div>
+	<div class="col">columna #2</div>
+	<div class="col">columna #3</div>
+		</div>
+
+	<div class="row">
+	<div class="col">columna #1</div>
+	<div class="col">columna #2</div>
+	<div class="col">columna #3</div>
+		</div>
+
+
+	</div>	
+	 </div>
+
+
+	<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

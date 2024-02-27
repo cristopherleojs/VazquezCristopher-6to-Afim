@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Columnas horizontales</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+	<style>
+		
+
+		Body
+		{
+			background: linear-gradient(to left, #0000CD ,#A4C4F8);
+        	height: 120%;
+        	width: 100ps;
+		}
+
+		.row
+		{
+			background: #e8e8e8;
+			margin-top: 28px;
+			height: 50px;
+			border-radius: 50px;
+			border-style: inset;
+			border-color: black;
+		}
+		.columnas
+		{
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4d5061;
+			transition: background.20s;
+			border-radius: 30px;
+		}
+		.columnas:hover
+		{
+			background-color: blue;
+			color: white;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+	 <div class="container">
+	 <button class='btn btn-primary'>boton de pruebas</button>
+	
+	<div class="row justify-content-star">
+	<div class="columnas col-4">columna 1</div>
+	<div class="columnas col-4">columna 2</div>
+	<div class="columnas col-3">columna 3</div>
+		</div>
+
+		<div class="row justify-content-end">
+	<div class="columnas col-4">columna 1</div>
+	<div class="columnas col-4">columna 2</div>
+		</div>
+
+		<div class="row justify-content-center">
+	<div class="columnas col-3">columna 1</div>
+	<div class="columnas col-3">columna 2</div>
+	<div class="columnas col-3">columna 3</div>
+		</div>
+
+		<div class="row justify-content-around">
+	<div class="columnas col-3">columna 1</div>
+	<div class="columnas col-3">columna 2</div>
+		</div>
+
+		<div class="row justify-content-between">
+	<div class="columnas col-3">columna 1</div>
+	<div class="columnas col-3">columna 1</div>
+		</div>
+
+	<div class="row justify-content-evenly">
+	<div class="columnas col-3">columna 1</div>
+	<div class="columnas col-3">columna 2</div>
+		</div>
+
+
+	</div>	
+	 </div>
+
+
+	<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
