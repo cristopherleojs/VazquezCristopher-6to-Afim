@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reproductor</title>
+	<!--Conecto la hoja de estilo de bootstrap-->
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+
+	<!--llamando las librerias de control de audio-->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.audioControls.min.js"></script>
+
+	<!--llamando a librerias propia de js-->
+	<script src="js/funciones.js"></script>
+
+	<!--Conecto javascript de bootstrap-->
+	<script type="text/javascript" src="bootstrap5/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/b0e4767092.js" crossorigin="anonymous"></script>
+	<style>
+		body
+		{
+		background: linear-gradient(to left, #E69F10 ,#FFB92C)
+		}
+		
+		.botoncabecera
+		{
+			background-color: f2f2f2;
+			color: white;
+			border-radius: 30px;
+		}
+
+		h2 {
+			  text-shadow:
+			  0  4px 8px yellow,
+			  0 -4px 8px black;	   
+			}
+		h3{text-shadow: 0 0 0.2em #f20, 0 0 0.2em #f20}
+
+		.letra{text-shadow:		
+				-6px -1px 1px rgba(0, 255, 0, 0.4);
+				color: yellow;
+				font-size: 30px;
+				font-family: 'Special Elite', cursive;}
+		.mas
+		{
+			background: #B8860B;
+			border-radius: 30px;
+			color: yellow;
+		}
+		.portada
+		{
+			background: #B8860B;
+			border-radius: 20px;
+			
+		}
+		.canciones
+		{
+			background: #B8860B;
+			border-radius: 20px;
+			
+		}
+		.color
+		{
+			color: yellow;
+		}
+		.tiempo
+		{
+			border-radius: 30px;
+		}
+
+
+	</style> 
+</head>
+<body>
+
+	<div class="container">
+		<section class="row">
+			<main class="row portada mt-4 col-md-6 col-xxl-6 col-xs-12 col-s-12">
+				<div class="row justify-content-between">
+
+					<div class="col-auto botoncabecera">
+						<div class="botones">
+							<i class="fa-solid fa-circle-arrow-left"></i>
+						</div>
+					</div>
+
+					<div class="col-auto botoncabecera ">
+						<p class="d-none d-md-block">Reproduciendo ahora</p>
+						<p class="d-block d-md-none">Ahora</p>
+					</div>
+
+
+					<div class="col-auto botoncabecera">
+						<div class="botones">
+							<i class="fa-solid fa-bars"></i>
+						</div>
+					</div>
+				</div>
+
+		<div class="row text-center mt-3">
+			<div class="col"><img src="blin blang.jpg" width="150px" class="rounded-circle"></div>
+		</div>
+
+		<div class="row">
+			<div class="col text-center">
+				<h2>MASHLE</h2>
+				<h3><i>blin blang blang born</i></h3>
+			</div>
+		</div>
+
+		 <div class="row col tiempo justify-content-between">
+				<span class="col-3 bg-warning nombremp3">Nombre</span>
+				<span class="col-3 bg-warning text-end audioTime" data-attr="timer">Tiempo</span>
+			</div>
+
+				<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="" aria-valuemin="0" aria-valuemax="100">
+  			  <div class="row updateProgress progress-bar  bg-warning" style="width: %"></div>
+			</div>
+
+
+		<div class="row mt-2 justify-content-center">
+			<div class="col-auto">
+				<i class="fa-solid fa-circle-arrow-left"></i>
+			</div>
+			<div class="col-auto">
+				<i class="fa-solid fa-play"></i>
+			</div>
+			<div class="col-auto">
+				<i class="fa-solid fa-circle-arrow-right"></i>
+			</div>
+		</div>
+			</main>
+
+
+	<aside class="col-md-6 canciones col-xxl-6 col-xs-12 col-s-12 mt-4">
+		<ul class="list-group list-group-flush mt-5 playlist">
+ 			<li class="list-group-flush" data-src="audios/Kygo - Raging feat. Kodaline (Cover Art) [Ultra Music].mp3">
+ 				<a href="#" class="color">Kygo - Raging feat</a>
+ 			</li>
+ 			<li class="list-group-flush" data-src="audios/Kygo - Stole The Show Feat. Parson James (Official Audio).mp3">
+ 				<a href="#" class="color">Kygo - S
+ 				tole The Show Feat</a>
+ 			</li>
+	  		<li class="list-group-flush" data-src="audios/MASHLE MAGIC AND MUSCLES S2 Opening  Bling-Bang-Bang-Born - Sub. Español AMV.mp3">
+	  			<a href="#" class="color">Bling-Bang-Bang-Born</a>
+	  		</li>
+		   	</ul>
+
+		   
+
+
+
+	</aside>
+
+ 
+	
+	<!--<button class="btn btn-primary">bootstrap</button>
+		<i class="fa-solid fa-arrow-left"></i>-->
+		</section>
+	</div>
+	<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>	
+</body>
+</html>
+

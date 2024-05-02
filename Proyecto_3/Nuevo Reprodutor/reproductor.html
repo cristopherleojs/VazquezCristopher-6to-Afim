@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/0f25780317.js" crossorigin="anonymous"></script>
+
+	<style>
+		body
+		{
+			background: #64DAED;
+		}
+		.botoncabecera
+		{
+			background-color: #1D6E7C;
+			color: white;
+			border-radius: 30px;
+		}
+		.mas
+		{
+			background: #019BB6;
+			border-radius: 30px;
+		}
+		.portada
+		{
+			background: #BFE1DD;
+			border-radius: 20px;
+		}
+		.canciones
+		{
+			background: #BFE1DD;
+			border-radius: 20px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container ">
+		<section class="row">
+			<main class="row portada mt-4 col-md-6 col-xxl-6 col-xs-12 col-s-12">
+				<div class="row justify-content-between">
+
+					<div class="col-auto botoncabecera ">
+						<div class="botones">
+							<i class="fa-solid fa-arrow-left"></i>
+						</div>
+					</div>
+
+					<div class="col-auto botoncabecera ">
+						<p class="d-none d-md-block">Reproduciendo ahora</p>
+						<p class="d-block d-md-none">Ahora</p>
+					</div>
+
+					<div class="col-auto botoncabecera ">
+						<div class="botones">
+							<i class="fa-solid fa-bars"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="row text-center mt-3">
+					<div class="col"><img src="portada.jpg" width="150px" class="rounded-circle"></div>
+				</div>
+
+				<div class="row">
+					<div class="col text-center">
+						<h2>Kygo</h2>
+						<h3>Cloud nine</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<audio class="audio" controls id="audio" autoplay>
+						<source src="canciones/Younger (Kygo Remix) (Audio).mp3" type="audio/mpeg">
+					</audio>
+				</div>
+
+				<div class="row mt-2 justify-content-center">
+					<div class="col-auto">
+						<i class="fa-solid fa-circle-arrow-left"></i>
+					</div>
+					<div class="col-auto">
+						<i class="fa-solid fa-play"></i>
+					</div>
+					<div class="col-auto">
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</div>
+				</div>
+			</main>
+
+			<aside class="col-md-6 canciones col-xxl-6 col-xs-12 col-s-12 mt-4">
+				<div class="row mas mt-4 justify-content-between">
+					<div class="col-auto">
+						<i class="fa-solid fa-music"></i>
+					</div>	
+					<div class="col-auto">
+						<h5>Kygo - Stole the Show Feat. Parson James</h5>
+					</div>	
+					<div class="col-auto">
+						<h5>3:43</h5>
+					</div>
+				</div>
+
+				<div class="row mas mt-4 justify-content-between">
+					<div class="col-auto">
+						<i class="fa-solid fa-music"></i>
+					</div>	
+					<div class="col-auto">
+						<h5>Kygo - Raging feat. Kodaline</h5>
+					</div>	
+					<div class="col-auto">
+						<h5>4:12</h5>
+					</div>
+				</div>
+			</aside>
+
+
+			<!--<button class="btn btn-primary">Bootstrap</button>
+			<i class="fa-solid fa-arrow-left"></i>-->
+		</section>
+	</div>
+
+
+
+
+
+	<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
